@@ -1,0 +1,36 @@
+/* Active Tab Highlighting */
+.tab-btn.active {
+    border-bottom: 3px solid #ec4899; /* Pink accent */
+    color: #ec4899;
+    font-weight: 600;
+}
+
+/* Hide scrollbar for tab navigation on mobile */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Custom modal slide animation */
+#modal-image {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* Indicator dots styling */
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.dot.active {
+    background-color: #ec4899;
+    width: 20px;
+}

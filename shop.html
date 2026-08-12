@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amber Moon — Store & Brand Affiliations</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- GLOBAL NAVIGATION HEADER -->
+    <nav class="bg-slate-900 text-white border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-lg font-bold tracking-tight hover:text-pink-400 transition">
+                AMBER MOON <span class="text-pink-500 text-xs font-normal ml-1">/ SHOP</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                <a href="index.html" class="text-slate-300 hover:text-pink-400 transition flex items-center gap-1.5">
+                    <i class="fas fa-user-tie text-xs"></i> Portfolio & CV
+                </a>
+                <a href="journal.html" class="text-slate-300 font-semibold flex items-center gap-1.5">
+                    <i class="fas fa-book-open text-xs"></i> Journal
+                </a>
+                <a href="shop.html" class="text-pink-400 hover:text-pink-400 transition flex items-center gap-1.5">
+                    <i class="fas fa-shopping-bag text-xs"></i> Shop & Looks
+                </a>
+                <a href="gift.html" class="text-slate-300 hover:text-pink-400 transition flex items-center gap-1.5">
+                    <i class="fas fa-gift text-xs"></i> Gift & Support
+                </a>
+            </div>
+            <button id="mobile-menu-btn" type="button" class="md:hidden text-slate-300 hover:text-white focus:outline-none p-1">
+                <i id="menu-icon" class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-b border-slate-800 px-6 py-4 space-y-3 transition-all duration-300">
+        <a href="index.html" class="block text-slate-3 00 hover:text-pink-400 font-medium text-sm py-2 border-b border-slate-800/60 flex items-center gap-2">
+            <i class="fas fa-user-tie text-xs text-pink-500"></i> Portfolio & CV
+        </a>
+        <a href="journal.html" class="block text-slate-300 hover:text-pink-400 font-medium text-sm py-2 border-b border-slate-800/60 flex items-center gap-2">
+            <i class="fas fa-book-open text-xs text-pink-500"></i> Journal
+        </a>
+        <a href="shop.html" class="block text-pink-400 hover:text-pink-400 font-medium text-sm py-2 border-b border-slate-800/60 flex items-center gap-2">
+            <i class="fas fa-shopping-bag text-xs text-pink-500"></i> Shop & Looks
+        </a>
+        <a href="gift.html" class="block text-slate-300 hover:text-pink-400 font-medium text-sm py-2 flex items-center gap-2">
+            <i class="fas fa-gift text-xs text-pink-500"></i> Gift & Support
+        </a>
+    </div>
+    </nav>
+
+    <!-- SHOP HERO -->
+    <header class="bg-white border-b border-slate-200 py-10 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="inline-block px-3 py-1 bg-pink-100 text-pink-700 text-xs font-semibold rounded-full uppercase tracking-wider mb-2">
+                Digital Shop & Brand Collections
+            </span>
+            <h1 class="text-3xl font-extrabold text-slate-900">Original Creations & Partnered Apparel</h1>
+            <p class="text-slate-500 text-sm mt-2 max-w-xl mx-auto">
+                Explore Amber's original published books, digital planners, apparel designs, and featured clothing modeled from brand partners.
+            </p>
+        </div>
+    </header>
+
+    <!-- MAIN SHOP CONTENT -->
+    <main class="max-w-5xl mx-auto w-full px-6 py-10 flex-grow space-y-16">
+
+        <!-- ========================================== -->
+        <!-- SECTION 1: AMBER'S ORIGINAL PRODUCTS      -->
+        <!-- ========================================== -->
+        <section>
+            <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-slate-200 pb-4 mb-6 gap-4">
+                <div>
+                    <span class="text-xs font-bold text-pink-600 uppercase tracking-widest">Designed & Published by Amber</span>
+                    <h2 class="text-2xl font-bold text-slate-900">Original Works</h2>
+                </div>
+
+                <!-- Sub-Category Filter Buttons for Original Works -->
+                <div class="flex space-x-2 overflow-x-auto no-scrollbar text-xs font-semibold">
+                    <button class="orig-filter active px-3.5 py-1.5 rounded-full bg-pink-600 text-white shadow-sm" data-sub="all">All Originals</button>
+                    <button class="orig-filter px-3.5 py-1.5 rounded-full bg-white text-slate-600 border border-slate-200 hover:border-pink-300 transition" data-sub="printables">Printables & Designs</button>
+                    <button class="orig-filter px-3.5 py-1.5 rounded-full bg-white text-slate-600 border border-slate-200 hover:border-pink-300 transition" data-sub="books">Books</button>
+                    <button class="orig-filter px-3.5 py-1.5 rounded-full bg-white text-slate-600 border border-slate-200 hover:border-pink-300 transition" data-sub="orig-clothes">Apparel</button>
+                </div>
+            </div>
+
+            <!-- ORIGINALS PRODUCT GRID -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+                <!-- ORIGINAL PRODUCT 1: PRINTABLE / ETSY -->
+                <div class="orig-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between" data-sub="printables">
+                    <div>
+                        <div class="h-52 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+                            <img src="/img/IMG_5384.JPG" alt="Planner Design" class="h-full object-contain shadow-md rounded">
+                            <span class="absolute top-3 left-3 bg-orange-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                                <i class="fab fa-etsy mr-1"></i> Sold on Etsy
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-pink-600 font-semibold text-[11px] uppercase tracking-wider">Printable Design</span>
+                            <h3 class="font-bold text-slate-900 text-base mt-0.5">Interactive Life & Goal Planner</h3>
+                            <p class="text-slate-500 text-xs mt-2 line-clamp-2">Hyperlinked digital daily organizer and printable routine tracker designed for tablet note-taking.</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-5 flex items-center justify-between border-t border-slate-100 mt-4">
+                        <span class="font-extrabold text-slate-900 text-base">$9.99</span>
+                        <a href="https://etsy.com" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-pink-600 hover:bg-pink-700 text-white text-xs font-semibold rounded-lg transition flex items-center gap-1.5">
+                            Buy on Etsy <i class="fas fa-external-link-alt text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ORIGINAL PRODUCT 2: BOOK / AMAZON -->
+                <div class="orig-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between" data-sub="books">
+                    <div>
+                        <div class="h-52 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+                            <img src="/img/IMG_5384.JPG" alt="Book Title" class="h-full object-contain shadow-md rounded">
+                            <span class="absolute top-3 left-3 bg-slate-900 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                                <i class="fab fa-amazon mr-1"></i> Amazon Books
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-pink-600 font-semibold text-[11px] uppercase tracking-wider">Published Book</span>
+                            <h3 class="font-bold text-slate-900 text-base mt-0.5">Wellness & Daily Balance</h3>
+                            <p class="text-slate-500 text-xs mt-2 line-clamp-2">Original paperback & Kindle title focusing on daily balance, self-care routines, and holistic habits.</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-5 flex items-center justify-between border-t border-slate-100 mt-4">
+                        <span class="font-extrabold text-slate-900 text-base">$14.99</span>
+                        <a href="https://amazon.com" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold rounded-lg transition flex items-center gap-1.5">
+                            View on Amazon <i class="fas fa-external-link-alt text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ORIGINAL PRODUCT 3: CLOTHES / CUSTOM SHOP -->
+                <div class="orig-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between" data-sub="orig-clothes">
+                    <div>
+                        <div class="h-52 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+                            <img src="https://via.placeholder.com/300x400?text=Custom+Apparel" alt="Apparel Design" class="h-full object-contain shadow-md rounded">
+                            <span class="absolute top-3 left-3 bg-pink-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                                Amber's Line
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-pink-600 font-semibold text-[11px] uppercase tracking-wider">Original Clothing</span>
+                            <h3 class="font-bold text-slate-900 text-base mt-0.5">Signature Streetwear Graphic Tee</h3>
+                            <p class="text-slate-500 text-xs mt-2 line-clamp-2">Custom cut-and-sew heavyweight tee featuring original graphic typography designed by Amber.</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-5 flex items-center justify-between border-t border-slate-100 mt-4">
+                        <span class="font-extrabold text-slate-900 text-base">$32.00</span>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-pink-600 hover:bg-pink-700 text-white text-xs font-semibold rounded-lg transition flex items-center gap-1.5">
+                            Buy Item <i class="fas fa-external-link-alt text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ========================================== -->
+        <!-- SECTION 2: AFFILIATED & MODELED BRANDS     -->
+        <!-- ========================================== -->
+        <section>
+            <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-slate-200 pb-4 mb-6 gap-4">
+                <div>
+                    <span class="text-xs font-bold text-pink-600 uppercase tracking-widest">Modeled Looks & Brand Collaborations</span>
+                    <h2 class="text-2xl font-bold text-slate-900">Affiliated Products</h2>
+                </div>
+
+                <!-- Brand Filter Buttons -->
+                <div class="flex space-x-2 overflow-x-auto no-scrollbar text-xs font-semibold">
+                    <button class="affil-filter active px-3.5 py-1.5 rounded-full bg-slate-900 text-white shadow-sm" data-brand="all">All Brands</button>
+                    <button class="affil-filter px-3.5 py-1.5 rounded-full bg-white text-slate-600 border border-slate-200 hover:border-pink-300 transition" data-brand="lovelost">Love Lost Manhattan</button>
+                    <button class="affil-filter px-3.5 py-1.5 rounded-full bg-white text-slate-600 border border-slate-200 hover:border-pink-300 transition" data-brand="shaykawaii">Shay Kawaii</button>
+                    <button class="affil-filter px-3.5 py-1.5 rounded-full bg-white text-slate-600 border border-slate-200 hover:border-pink-300 transition" data-brand="shein">SHEIN</button>
+                    <button class="affil-filter px-3.5 py-1.5 rounded-full bg-white text-slate-600 border border-slate-200 hover:border-pink-300 transition" data-brand="amazon-affil">Amazon Fashion</button>
+                </div>
+            </div>
+
+            <!-- AFFILIATED PRODUCT GRID -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+                <!-- AFFILIATED 1: LOVE LOST MANHATTAN -->
+                <div class="affil-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between" data-brand="lovelost">
+                    <div>
+                        <div class="h-52 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+                            <img src="https://via.placeholder.com/300x400?text=Love+Lost+Set" alt="Love Lost Manhattan Outfit" class="h-full object-contain shadow-md rounded">
+                            <span class="absolute top-3 left-3 bg-purple-700 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                                Love Lost Manhattan
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-slate-400 font-semibold text-[11px] uppercase tracking-wider">Modeled Outfit</span>
+                            <h3 class="font-bold text-slate-900 text-base mt-0.5">Editorial NYC Streetwear Set</h3>
+                            <p class="text-slate-500 text-xs mt-2 line-clamp-2">Featured set modeled by Amber for the Love Lost Manhattan editorial lookbook campaign.</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-5 flex items-center justify-between border-t border-slate-100 mt-4">
+                        <span class="font-extrabold text-slate-900 text-base">$68.00</span>
+                        <a href="https://lovelostmanhattan.com" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold rounded-lg transition flex items-center gap-1.5">
+                            Shop Brand <i class="fas fa-external-link-alt text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- AFFILIATED 2: SHAY KAWAII -->
+                <div class="affil-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between" data-brand="shaykawaii">
+                    <div>
+                        <div class="h-52 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+                            <img src="https://via.placeholder.com/300x400?text=Shay+Kawaii+Look" alt="Shay Kawaii Dress" class="h-full object-contain shadow-md rounded">
+                            <span class="absolute top-3 left-3 bg-pink-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                                Shay Kawaii
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-slate-400 font-semibold text-[11px] uppercase tracking-wider">Promotional Look</span>
+                            <h3 class="font-bold text-slate-900 text-base mt-0.5">Statement Festival Dress</h3>
+                            <p class="text-slate-500 text-xs mt-2 line-clamp-2">Bold aesthetic print dress featured across social promotional photoshoots.</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-5 flex items-center justify-between border-t border-slate-100 mt-4">
+                        <span class="font-extrabold text-slate-900 text-base">$45.00</span>
+                        <a href="https://shaykawaii.com" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-pink-600 hover:bg-pink-700 text-white text-xs font-semibold rounded-lg transition flex items-center gap-1.5">
+                            Shop Outfit <i class="fas fa-external-link-alt text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- AFFILIATED 3: SHEIN -->
+                <div class="affil-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between" data-brand="shein">
+                    <div>
+                        <div class="h-52 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+                            <img src="https://via.placeholder.com/300x400?text=SHEIN+Outfit" alt="SHEIN Top" class="h-full object-contain shadow-md rounded">
+                            <span class="absolute top-3 left-3 bg-black text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                                SHEIN
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-slate-400 font-semibold text-[11px] uppercase tracking-wider">Affiliate Look</span>
+                            <h3 class="font-bold text-slate-900 text-base mt-0.5">Ribbed Bodycon Crop Top</h3>
+                            <p class="text-slate-500 text-xs mt-2 line-clamp-2">Casual essential top styled in Amber's daily wear digital content.</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-5 flex items-center justify-between border-t border-slate-100 mt-4">
+                        <span class="font-extrabold text-slate-900 text-base">$12.00</span>
+                        <a href="https://shein.com" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold rounded-lg transition flex items-center gap-1.5">
+                            Buy on SHEIN <i class="fas fa-external-link-alt text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- AFFILIATED 4: AMAZON FASHION -->
+                <div class="affil-card bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between" data-brand="amazon-affil">
+                    <div>
+                        <div class="h-52 bg-slate-100 relative overflow-hidden flex items-center justify-center p-4">
+                            <img src="https://via.placeholder.com/300x400?text=Amazon+Look" alt="Amazon Fashion Item" class="h-full object-contain shadow-md rounded">
+                            <span class="absolute top-3 left-3 bg-amber-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
+                                <i class="fab fa-amazon mr-1"></i> Amazon Fashion
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-slate-400 font-semibold text-[11px] uppercase tracking-wider">Storefront Pick</span>
+                            <h3 class="font-bold text-slate-900 text-base mt-0.5">High-Waisted Flare Trousers</h3>
+                            <p class="text-slate-500 text-xs mt-2 line-clamp-2">Fashion find featured in Amber's official Amazon storefront recommendations.</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-5 flex items-center justify-between border-t border-slate-100 mt-4">
+                        <span class="font-extrabold text-slate-900 text-base">$28.99</span>
+                        <a href="https://amazon.com" target="_blank" rel="noopener noreferrer" class="px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white text-xs font-semibold rounded-lg transition flex items-center gap-1.5">
+                            Buy on Amazon <i class="fas fa-external-link-alt text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-white py-10 px-6">
+        <div class="max-w-5xl mx-auto text-center space-y-4">
+            <h2 class="text-2xl font-bold">Connect with Amber</h2>
+            <p class="text-slate-400 text-sm">For modeling bookings, brand affiliate opportunities, or shop inquiries.</p>
+            <div class="flex justify-center space-x-6 text-xl pt-2">
+                <a href="#" class="text-slate-400 hover:text-pink-400 transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-slate-400 hover:text-pink-400 transition" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:amber@example.com" class="text-slate-400 hover:text-pink-400 transition" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="text-slate-500 text-xs pt-6">&copy; 2026 Amber Moon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>

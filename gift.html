@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amber Moon — Support & Gifting</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- GLOBAL NAVIGATION HEADER -->
+    <nav class="bg-slate-900 text-white border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="text-lg font-bold tracking-tight hover:text-pink-400 transition">
+                AMBER MOON <span class="text-pink-500 text-xs font-normal ml-1">/ SUPPORT</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                <a href="index.html" class="text-slate-300 hover:text-pink-400 transition flex items-center gap-1.5">
+                    <i class="fas fa-user-tie text-xs"></i> Portfolio & CV
+                </a>
+                <a href="journal.html" class="text-slate-300 font-semibold flex items-center gap-1.5">
+                    <i class="fas fa-book-open text-xs"></i> Journal
+                </a>
+                <a href="shop.html" class="text-slate-300 hover:text-pink-400 transition flex items-center gap-1.5">
+                    <i class="fas fa-shopping-bag text-xs"></i> Shop & Looks
+                </a>
+                <a href="gift.html" class="text-pink-400 hover:text-pink-400 transition flex items-center gap-1.5">
+                    <i class="fas fa-gift text-xs"></i> Gift & Support
+                </a>
+            </div>
+            <button id="mobile-menu-btn" type="button" class="md:hidden text-slate-300 hover:text-white focus:outline-none p-1">
+                <i id="menu-icon" class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-b border-slate-800 px-6 py-4 space-y-3 transition-all duration-300">
+        <a href="index.html" class="block text-slate-3 00 hover:text-pink-400 font-medium text-sm py-2 border-b border-slate-800/60 flex items-center gap-2">
+            <i class="fas fa-user-tie text-xs text-pink-500"></i> Portfolio & CV
+        </a>
+        <a href="journal.html" class="block text-slate-300 hover:text-pink-400 font-medium text-sm py-2 border-b border-slate-800/60 flex items-center gap-2">
+            <i class="fas fa-book-open text-xs text-pink-500"></i> Journal
+        </a>
+        <a href="shop.html" class="block text-slate-300 hover:text-pink-400 font-medium text-sm py-2 border-b border-slate-800/60 flex items-center gap-2">
+            <i class="fas fa-shopping-bag text-xs text-pink-500"></i> Shop & Looks
+        </a>
+        <a href="gift.html" class="block text-pink-400 hover:text-pink-400 font-medium text-sm py-2 flex items-center gap-2">
+            <i class="fas fa-gift text-xs text-pink-500"></i> Gift & Support
+        </a>
+    </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <header class="bg-white border-b border-slate-200 py-10 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <span class="inline-block px-3 py-1 bg-pink-100 text-pink-700 text-xs font-semibold rounded-full uppercase tracking-wider mb-2">
+                Support & Appreciation
+            </span>
+            <h1 class="text-3xl font-extrabold text-slate-900">Send a Gift or Support</h1>
+            <p class="text-slate-500 text-sm mt-2 max-w-xl mx-auto">
+                If you'd like to send a gift, buy me a coffee, or support my creative work, modeling projects, and content, you can use any of the options below.
+            </p>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="max-w-3xl mx-auto w-full px-6 py-10 flex-grow space-y-10">
+
+        <!-- DIRECT CASH SUPPORTS -->
+        <section>
+            <h2 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <i class="fas fa-wallet text-pink-600"></i> Direct Cash Support
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                <!-- CASH APP -->
+                <div class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500 text-white flex items-center justify-center text-xl font-bold">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-sm">Cash App</h3>
+                            <p class="text-xs text-slate-400 mt-0.5">$OfficialAmberMoon</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyToClipboard('$OfficialAmberMoon', this)" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg transition">
+                            Copy Tag
+                        </button>
+                        <a href="https://cash.app/$OfficialAmberMoon" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-semibold rounded-lg transition">
+                            Send
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PAYPAL -->
+                <div class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl">
+                            <i class="fab fa-paypal"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-sm">PayPal</h3>
+                            <p class="text-xs text-slate-400 mt-0.5">paypal.me/AmberHandle</p>
+                        </div>
+                    </div>
+                    <a href="https://paypal.me/AmberHandle" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold rounded-lg transition">
+                        Send via PayPal
+                    </a>
+                </div>
+
+                <!-- VENMO -->
+                <div class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-sky-500 text-white flex items-center justify-center text-xl font-bold">
+                            V
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-sm">Venmo</h3>
+                            <p class="text-xs text-slate-400 mt-0.5">@AmberVenmo</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <button onclick="copyToClipboard('@AmberVenmo', this)" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg transition">
+                            Copy Tag
+                        </button>
+                    </div>
+                </div>
+
+                <!-- BUY ME A COFFEE / KO-FI -->
+                <div class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-amber-400 text-slate-900 flex items-center justify-center text-xl">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-sm">Buy Me a Coffee</h3>
+                            <p class="text-xs text-slate-400 mt-0.5">Support small projects</p>
+                        </div>
+                    </div>
+                    <a href="https://buymeacoffee.com" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 bg-amber-500 hover:bg-amber-600 text-white text-xs font-semibold rounded-lg transition">
+                        Support
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- WISHLISTS & PHYSICAL GIFTS -->
+        <section>
+            <h2 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <i class="fas fa-box-open text-pink-600"></i> Wishlists & Gift Registries
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                <!-- AMAZON WISHLIST -->
+                <div class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-slate-900 text-amber-400 flex items-center justify-center text-xl">
+                            <i class="fab fa-amazon"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-sm">Amazon Wishlist</h3>
+                            <p class="text-xs text-slate-400 mt-0.5">Shoot wardrobe & studio gear</p>
+                        </div>
+                    </div>
+                    <a href="https://amazon.com" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold rounded-lg transition flex items-center gap-1">
+                        View List <i class="fas fa-external-link-alt text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- THRONE GIFTS / CUSTOM REGISTRY -->
+                <div class="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-pink-600 text-white flex items-center justify-center text-xl">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-sm">Throne Wishlist</h3>
+                            <p class="text-xs text-slate-400 mt-0.5">Privacy-safe physical gifts</p>
+                        </div>
+                    </div>
+                    <a href="https://throne.com/officialambermoon" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 bg-pink-600 hover:bg-pink-700 text-white text-xs font-semibold rounded-lg transition flex items-center gap-1">
+                        View List <i class="fas fa-external-link-alt text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- THANK YOU NOTE -->
+        <div class="bg-pink-50 rounded-2xl border border-pink-200 p-6 text-center">
+            <h3 class="font-bold text-pink-900 text-base">Thank You for Your Support!</h3>
+            <p class="text-xs text-pink-700 mt-1 max-w-lg mx-auto">
+                Every contribution directly supports new creative projects, photoshoots, publication prints, and daily content creation.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-white py-10 px-6">
+        <div class="max-w-5xl mx-auto text-center space-y-4">
+            <h2 class="text-2xl font-bold">Connect with Amber</h2>
+            <div class="flex justify-center space-x-6 text-xl pt-2">
+                <a href="#" class="text-slate-400 hover:text-pink-400 transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-slate-400 hover:text-pink-400 transition" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:amber@example.com" class="text-slate-400 hover:text-pink-400 transition" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="text-slate-500 text-xs pt-6">&copy; 2026 Amber Moon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>

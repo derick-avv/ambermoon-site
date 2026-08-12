@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amber Moon — Professional Portfolio & CV</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+    <!-- GLOBAL NAVIGATION HEADER -->
+<nav class="bg-slate-900 text-white border-b border-slate-800 sticky top-0 z-40">
+    <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="index.html" class="text-lg font-bold tracking-tight hover:text-pink-400 transition">
+            AMBER MOON <span class="text-pink-500 text-xs font-normal ml-1">/ PORTFOLIO</span>
+        </a>
+        <div class="hidden md:flex items-center space-x-6 text-sm font-medium">
+            <a href="index.html" class="nav-link text-pink-400 hover:text-pink-400 transition flex items-center gap-1.5">
+                <i class="fas fa-user-tie text-xs"></i> Portfolio & CV
+            </a>
+             <a href="journal.html" class="nav-link text-slate-300 hover:text-pink-400 transition flex items-center gap-1.5">
+                <i class="fas fa-book-open text-xs"></i> Journal
+            </a>
+            <a href="shop.html" class="nav-link text-slate-300 hover:text-pink-400 transition flex items-center gap-1.5">
+                <i class="fas fa-shopping-bag text-xs"></i> Shop & Looks
+            </a>
+            <a href="gift.html" class="nav-link text-slate-300 hover:text-pink-400 transition flex items-center gap-1.5">
+                <i class="fas fa-gift text-xs"></i> Gift & Support
+            </a>
+        </div>
+        <button id="mobile-menu-btn" type="button" aria-label="Toggle Navigation Menu" class="md:hidden text-slate-300 hover:text-white focus:outline-none p-1">
+            <i id="menu-icon" class="fas fa-bars text-xl"></i>
+        </button>
+    </div>
+    <!-- Mobile Dropdown Menu Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-b border-slate-800 px-6 py-4 space-y-3 transition-all duration-300">
+        <a href="index.html" class="block text-pink-400 hover:text-pink-400 font-medium text-sm py-2 border-b border-slate-800/60 flex items-center gap-2">
+            <i class="fas fa-user-tie text-xs text-pink-500"></i> Portfolio & CV
+        </a>
+        <a href="journal.html" class="block text-slate-300 hover:text-pink-400 font-medium text-sm py-2 border-b border-slate-800/60 flex items-center gap-2">
+            <i class="fas fa-book-open text-xs text-pink-500"></i> Journal
+        </a>
+        <a href="shop.html" class="block text-slate-300 hover:text-pink-400 font-medium text-sm py-2 border-b border-slate-800/60 flex items-center gap-2">
+            <i class="fas fa-shopping-bag text-xs text-pink-500"></i> Shop & Looks
+        </a>
+        <a href="gift.html" class="block text-slate-300 hover:text-pink-400 font-medium text-sm py-2 flex items-center gap-2">
+            <i class="fas fa-gift text-xs text-pink-500"></i> Gift & Support
+        </a>
+    </div>
+</nav>
+
+    <!-- HERO SECTION -->
+    <header class="bg-white border-b border-slate-200 py-12 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden bg-slate-200 border-4 border-pink-100 shadow-md">
+                <img src="/img/FullSizeRender-17.jpg" alt="Amber Profile Picture" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight">Amber Moon</h1>
+            <p class="text-lg text-pink-600 font-medium mt-1">Commercial & Editorial Model | Digital Creator | Integrative Health & Finance Specialist</p>
+            <p class="text-slate-500 text-sm mt-2 max-w-xl mx-auto">
+                Multidisciplinary professional blending commercial and editorial modeling with healthcare assistance, special needs childcare support, business finance, and digital content design.
+            </p>
+            
+            <div class="mt-6 flex justify-center gap-4">
+                <a href="#contact" class="px-5 py-2.5 bg-pink-600 hover:bg-pink-700 text-white rounded-lg font-medium text-sm transition shadow-sm">Get in Touch</a>
+                <a href="#portfolio" class="px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-medium text-sm transition">View Work</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- TABBED CONTENT SECTION -->
+    <main class="max-w-4xl mx-auto w-full px-6 py-10 flex-grow" id="portfolio">
+        
+        <!-- Navigation Tabs -->
+        <div class="flex border-b border-slate-200 justify-center space-x-6 text-sm md:text-base overflow-x-auto no-scrollbar">
+            <button data-tab="modeling" class="tab-btn active py-3 px-2 text-slate-600 hover:text-pink-600 transition">Modeling & Media</button>
+            <button data-tab="care" class="tab-btn py-3 px-2 text-slate-600 hover:text-pink-600 transition">Care & Wellness</button>
+            <button data-tab="publishing" class="tab-btn py-3 px-2 text-slate-600 hover:text-pink-600 transition">Books & Digital Products</button>
+            <button data-tab="finance" class="tab-btn py-3 px-2 text-slate-600 hover:text-pink-600 transition">Business & Finance</button>
+        </div>
+
+        <!-- TAB CONTENT 1: MODELING & MEDIA -->
+<section id="content-modeling" class="tab-content py-8">
+    <div class="mb-6">
+        <h2 class="text-2xl font-bold text-slate-900">Editorial Shoots & Portfolios</h2>
+        <p class="text-slate-600 text-sm mt-1">Magazine spreads, editorial shoots, and commercial apparel campaigns.</p>
+    </div>
+
+    <!-- EDITORIAL SHOOT CARDS CONTAINER -->
+    <div class="space-y-6">
+
+        <!-- SHOOT CARD 1 -->
+        <div class="shoot-card group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col sm:flex-row cursor-pointer"
+             onclick="openGallery('shoot-1')">
+            <!-- Left Side: Cover Page Image -->
+            <div class="sm:w-1/3 min-h-[220px] bg-slate-900 relative overflow-hidden">
+                <img src="img/shoots/shoot-1/slide-1-cover.png" alt="Editorial Cover" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <span class="absolute top-3 left-3 bg-pink-600/90 backdrop-blur-sm text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                    Cover
+                </span>
+            </div>
+
+            <!-- Right Side: Details & CTA -->
+            <div class="sm:w-2/3 p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between text-xs text-slate-400 font-medium mb-1">
+                        <span class="text-pink-600 font-semibold uppercase tracking-wider">Editorial Set Vol. 01</span>
+                        <span><i class="far fa-calendar-alt mr-1"></i> Sep 1, 2025</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 group-hover:text-pink-600 transition">Debut Editorial Collection</h3>
+                    <p class="text-slate-500 text-sm mt-2">Full 7-slide magazine editorial spread featuring custom styling and print layout composition.</p>
+                </div>
+
+                <div class="mt-6 flex items-center justify-between border-t border-slate-100 pt-4">
+                    <span class="text-xs text-slate-400 font-medium"><i class="fas fa-images mr-1"></i> 7 Slides</span>
+                    <button class="text-xs font-bold text-pink-600 group-hover:text-pink-700 flex items-center gap-1">
+                        View Editorial <i class="fas fa-arrow-right text-[10px] transform group-hover:translate-x-1 transition"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PLACEHOLDER FOR UPCOMING SHOOT CARD -->
+        <div class="bg-slate-100/60 p-8 rounded-2xl border-2 border-dashed border-slate-300 text-center flex flex-col items-center justify-center">
+            <div class="w-10 h-10 mb-2 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center">
+                <i class="fas fa-camera text-base"></i>
+            </div>
+            <h4 class="font-bold text-slate-700 text-sm">Next Editorial Set Coming Soon</h4>
+            <p class="text-slate-400 text-xs mt-0.5">Currently in post-production and magazine layout design.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- LIGHTBOX MODAL OVERLAY (Place right before body) -->
+<div id="gallery-modal" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden flex flex-col justify-between p-4 md:p-6">
+    <!-- Top Bar -->
+    <div class="flex justify-between items-center text-white max-w-5xl mx-auto w-full z-10">
+        <div>
+            <h4 id="modal-title" class="font-bold text-base md:text-lg">Editorial Title</h4>
+            <p id="modal-counter" class="text-xs text-slate-400">Slide 1 of 9</p>
+        </div>
+        <button onclick="closeGallery()" class="w-10 h-10 rounded-full bg-slate-800/80 hover:bg-slate-700 text-white flex items-center justify-center transition">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Main Slide Display Area -->
+    <div class="relative flex-grow flex items-center justify-center my-4 max-w-5xl mx-auto w-full overflow-hidden">
+        <!-- Previous Arrow -->
+        <button onclick="prevSlide()" class="absolute left-2 z-10 w-12 h-12 rounded-full bg-slate-900/80 hover:bg-pink-600 text-white flex items-center justify-center transition shadow-lg">
+            <i class="fas fa-chevron-left text-lg"></i>
+        </button>
+
+        <!-- Active Slide Image -->
+        <img id="modal-image" src="" alt="Editorial Slide" class="max-h-[75vh] max-w-full object-contain rounded-lg shadow-2xl transition-all duration-300">
+
+        <!-- Next Arrow -->
+        <button onclick="nextSlide()" class="absolute right-2 z-10 w-12 h-12 rounded-full bg-slate-900/80 hover:bg-pink-600 text-white flex items-center justify-center transition shadow-lg">
+            <i class="fas fa-chevron-right text-lg"></i>
+        </button>
+    </div>
+
+    <!-- Bottom Indicator Dots Bar -->
+    <div id="modal-dots" class="flex justify-center items-center gap-2 max-w-5xl mx-auto w-full pb-2">
+        <!-- Generated dynamically via JS -->
+    </div>
+</div>
+
+        <!-- TAB CONTENT 2: CARE & WELLNESS -->
+        <section id="content-care" class="tab-content py-8 hidden">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Caregiving, Childcare & Health</h2>
+
+            <div class="space-y-6">
+                <!-- Ongoing Education -->
+                <div class="bg-pink-50 p-6 rounded-xl border border-pink-200">
+                    <span class="text-pink-600 font-bold text-xs uppercase tracking-wider">Ongoing Specialization</span>
+                    <h3 class="font-bold text-slate-900 text-lg mt-1">Integrative Health and Medicine Specialization</h3>
+                    <p class="text-slate-600 text-sm">University of Minnesota — Continuing Professional Studies</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <h3 class="font-bold text-slate-800 text-lg">Childcare Provider & Specialist</h3>
+                    <p class="text-pink-600 text-xs font-semibold mb-2">Hamaspik & HASC Center</p>
+                    <p class="text-slate-600 text-sm">Provided specialized care, emotional encouragement, and daily support for children with developmental and special needs in structured agency environments.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <h3 class="font-bold text-slate-800 text-lg">Home Attendant</h3>
+                    <p class="text-pink-600 text-xs font-semibold mb-2">All American Home Care Agency</p>
+                    <p class="text-slate-600 text-sm">Delivered direct personal care, routine assistance, and wellness monitoring for individual clients.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB CONTENT 3: BOOKS & DIGITAL PRODUCTS -->
+        <section id="content-publishing" class="tab-content py-8 hidden">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Published Works & Digital Products</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <h3 class="font-bold text-slate-800 text-lg">Authorship & Publications</h3>
+                    <p class="text-pink-600 text-xs font-semibold uppercase mb-2">Books & Co-Authored Works</p>
+                    <p class="text-slate-600 text-sm">Authored and co-created published books, creative titles, and written educational materials.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <h3 class="font-bold text-slate-800 text-lg">Digital Planners & Printables</h3>
+                    <p class="text-pink-600 text-xs font-semibold uppercase mb-2">Organization & Design Tools</p>
+                    <p class="text-slate-600 text-sm">Designed digital planners, daily agendas, productivity organizers, and printable templates.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB CONTENT 4: BUSINESS & FINANCE -->
+        <section id="content-finance" class="tab-content py-8 hidden">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Commercial Finance & Sales</h2>
+
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <h3 class="font-bold text-slate-800 text-lg">Commercial Business Loan Specialist</h3>
+                <p class="text-pink-600 text-xs font-semibold mb-2">Merchant Cash Advance (MCA) & Working Capital Solutions</p>
+                <ul class="list-disc list-inside text-slate-600 text-sm space-y-2 mt-2">
+                    <li>Consulted business owners on working capital options and financing structures.</li>
+                    <li>Coordinated financing through MCA providers, SBA loans, and Business Lines of Credit (BLoC).</li>
+                    <li>Managed lead intake, pipeline tracking, and client negotiations.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER / CONTACT SECTION -->
+    <footer id="contact" class="bg-slate-900 text-white py-10 px-6 mt-12">
+        <div class="max-w-4xl mx-auto text-center space-y-4">
+            <h2 class="text-2xl font-bold">Connect with Amber</h2>
+            <p class="text-slate-400 text-sm">Open for modeling bookings, brand collaborations, and consulting inquiries.</p>
+            
+            <div class="flex justify-center space-x-6 text-xl pt-2">
+                <a href="#" class="text-slate-400 hover:text-pink-400 transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-slate-400 hover:text-pink-400 transition" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:amber@example.com" class="text-slate-400 hover:text-pink-400 transition" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <p class="text-slate-500 text-xs pt-6">&copy; 2026 Amber Moon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>

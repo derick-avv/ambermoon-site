@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Amber — Measurements & Specs</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- GLOBAL NAVIGATION HEADER -->
+    <nav class="bg-slate-900 text-white border-b border-slate-800 sticky top-0 z-40">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="/" class="text-lg font-bold tracking-tight hover:text-pink-400 transition">
+                AMBER MOON <span class="text-pink-500 text-xs font-normal ml-1">/ ABOUT</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                <a href="/" class="nav-link text-slate-300 hover:text-pink-400 transition flex items-center gap-1.5">
+                    <i class="fas fa-user-tie text-xs"></i> Portfolio & CV
+                </a>
+                <a href="/about" class="nav-link text-pink-400 hover:text-pink-400 transition flex items-center gap-1.5">
+                    <i class="fas fa-id-card text-xs"></i> About
+                </a>
+                <a href="/journal" class="nav-link text-slate-300 hover:text-pink-400 transition flex items-center gap-1.5">
+                    <i class="fas fa-book-open text-xs"></i> Journal
+                </a>
+                <a href="/shop" class="nav-link text-slate-300 hover:text-pink-400 transition flex items-center gap-1.5">
+                    <i class="fas fa-shopping-bag text-xs"></i> Shop & Looks
+                </a>
+                <a href="/support" class="nav-link text-slate-300 hover:text-pink-400 transition flex items-center gap-1.5">
+                    <i class="fas fa-gift text-xs"></i> Gift & Support
+                </a>
+            </div>
+            <button id="mobile-menu-btn" type="button" aria-label="Toggle Navigation Menu" class="md:hidden text-slate-300 hover:text-white focus:outline-none p-1">
+                <i id="menu-icon" class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-950 border-b border-slate-800 px-6 py-4 space-y-3 transition-all duration-300">
+            <a href="/" class="block text-slate-300 hover:text-pink-400 font-medium text-sm py-2 border-b border-slate-800/60 flex items-center gap-2">
+                <i class="fas fa-user-tie text-xs text-pink-500"></i> Portfolio & CV
+            </a>
+            <a href="/about" class="block text-pink-400 hover:text-pink-400 font-medium text-sm py-2 border-b border-slate-800/60 flex items-center gap-2">
+                <i class="fas fa-id-card text-xs text-pink-500"></i> About
+            </a>
+            <a href="/journal" class="block text-slate-300 hover:text-pink-400 font-medium text-sm py-2 border-b border-slate-800/60 flex items-center gap-2">
+                <i class="fas fa-book-open text-xs text-pink-500"></i> Journal
+            </a>
+            <a href="/shop" class="block text-slate-300 hover:text-pink-400 font-medium text-sm py-2 border-b border-slate-800/60 flex items-center gap-2">
+                <i class="fas fa-shopping-bag text-xs text-pink-500"></i> Shop & Looks
+            </a>
+            <a href="/support" class="block text-slate-300 hover:text-pink-400 font-medium text-sm py-2 flex items-center gap-2">
+                <i class="fas fa-gift text-xs text-pink-500"></i> Gift & Support
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO / BIO SECTION -->
+    <header class="bg-white border-b border-slate-200 py-12 px-6">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
+            <div class="w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden bg-slate-200 border-4 border-pink-100 shadow-md shrink-0">
+                <img src="/img/FullSizeRender-17.jpg" alt="Amber Moon" class="w-full h-full object-cover">
+            </div>
+            <div class="text-center md:text-left space-y-3">
+                <span class="text-xs font-bold text-pink-600 uppercase tracking-wider">Biography</span>
+                <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">About Amber Moon</h1>
+                <p class="text-slate-600 text-sm md:text-base leading-relaxed">
+                    Born in Brooklyn, raised in Queens. Bringing authentic NYC presence, adaptability, and vision to editorial, commercial, and creative modeling.
+                </p>
+                <p class="text-slate-500 text-sm leading-relaxed">
+                    Multidisciplinary background bridging high-fashion editorial work, healthcare support, childcare, and business finance.
+                </p>
+                <div class="pt-2 flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="/assets/amber-moon-compcard.pdf" download class="px-5 py-2.5 bg-pink-600 hover:bg-pink-700 text-white rounded-lg font-medium text-sm transition shadow-sm flex items-center gap-2">
+                        <i class="fas fa-download text-xs"></i> Download Comp Card
+                    </a>
+                    <a href="#contact" class="px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-medium text-sm transition">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="max-w-4xl mx-auto w-full px-6 py-10 flex-grow space-y-12">
+
+        <!-- MEASUREMENTS & SPECS SECTION -->
+        <section>
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-slate-900">Model Measurements & Specs</h2>
+                <p class="text-slate-600 text-sm mt-1">Direct statistics for agencies, casting directors, and editorial bookings.</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
+                    <span class="block text-xs font-semibold text-pink-600 uppercase tracking-wider">Location</span>
+                    <span class="block text-lg font-bold text-slate-900 mt-1">New York, NY</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
+                    <span class="block text-xs font-semibold text-pink-600 uppercase tracking-wider">Height</span>
+                    <span class="block text-lg font-bold text-slate-900 mt-1">5' 3"</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
+                    <span class="block text-xs font-semibold text-pink-600 uppercase tracking-wider">Bust</span>
+                    <span class="block text-lg font-bold text-slate-900 mt-1">32B</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
+                    <span class="block text-xs font-semibold text-pink-600 uppercase tracking-wider">Waist</span>
+                    <span class="block text-lg font-bold text-slate-900 mt-1">24"</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
+                    <span class="block text-xs font-semibold text-pink-600 uppercase tracking-wider">Hips</span>
+                    <span class="block text-lg font-bold text-slate-900 mt-1">35"</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
+                    <span class="block text-xs font-semibold text-pink-600 uppercase tracking-wider">Shoe</span>
+                    <span class="block text-lg font-bold text-slate-900 mt-1">7 US</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
+                    <span class="block text-xs font-semibold text-pink-600 uppercase tracking-wider">Hair</span>
+                    <span class="block text-lg font-bold text-slate-900 mt-1">Dark Brown</span>
+                </div>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm text-center">
+                    <span class="block text-xs font-semibold text-pink-600 uppercase tracking-wider">Eyes</span>
+                    <span class="block text-lg font-bold text-slate-900 mt-1">Brown</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- BRAND WALL / CLIENT COLLABORATIONS -->
+        <section>
+            <div class="mb-6">
+                <h2 class="text-2xl font-bold text-slate-900">Select Collaborations & Clients</h2>
+                <p class="text-slate-600 text-sm mt-1">Featured work across editorial publications, apparel brands, and agency projects.</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+    <!-- Shay Kawaii -->
+    <a href="#" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center justify-center text-center font-bold text-slate-700 hover:text-pink-600 border-slate-200 hover:border-pink-300 transition group">
+        <span class="text-base tracking-tight group-hover:scale-105 transition-transform duration-200">Shay Kawaii</span>
+        <span class="text-[10px] text-slate-400 uppercase tracking-wider font-semibold mt-1">Boutique</span>
+    </a>
+
+    <!-- Love Lost Manhattan -->
+    <a href="#" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center justify-center text-center font-bold text-slate-700 hover:text-pink-600 border-slate-200 hover:border-pink-300 transition group">
+        <span class="text-base tracking-tight group-hover:scale-105 transition-transform duration-200">Love Lost Manhattan</span>
+        <span class="text-[10px] text-slate-400 uppercase tracking-wider font-semibold mt-1">Resort & Swim</span>
+    </a>
+
+    <!-- SHEIN (Main / Parent) -->
+    <a href="#" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center justify-center text-center font-bold text-slate-700 hover:text-pink-600 border-slate-200 hover:border-pink-300 transition group">
+        <span class="text-base tracking-tight group-hover:scale-105 transition-transform duration-200">SHEIN</span>
+        <span class="text-[10px] text-slate-400 uppercase tracking-wider font-semibold mt-1">Partner</span>
+    </a>
+
+    <!-- Amazon (Main Storefront) -->
+    <a href="#" class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center justify-center text-center font-bold text-slate-700 hover:text-pink-600 border-slate-200 hover:border-pink-300 transition group">
+        <span class="text-base tracking-tight group-hover:scale-105 transition-transform duration-200">Amazon</span>
+        <span class="text-[10px] text-slate-400 uppercase tracking-wider font-semibold mt-1">Storefront</span>
+    </a>
+
+    <!-- Sub-Brand Expansion Slot 1 (e.g., SHEIN MOTF / Dazy) -->
+    <div class="bg-slate-50/50 p-6 rounded-xl border border-dashed border-slate-200 flex flex-col items-center justify-center text-center font-medium text-slate-400">
+        <span class="text-sm">SHEIN Sub-Brand</span>
+        <span class="text-[10px] text-slate-400 mt-1">Add when purchased</span>
+    </div>
+
+    <!-- Sub-Brand Expansion Slot 2 (e.g., Amazon Fashion / The Drop) -->
+    <div class="bg-slate-50/50 p-6 rounded-xl border border-dashed border-slate-200 flex flex-col items-center justify-center text-center font-medium text-slate-400">
+        <span class="text-sm">Amazon Store Brand</span>
+        <span class="text-[10px] text-slate-400 mt-1">Add when purchased</span>
+    </div>
+
+    <!-- Sub-Brand Expansion Slot 3 -->
+    <div class="bg-slate-50/50 p-6 rounded-xl border border-dashed border-slate-200 flex flex-col items-center justify-center text-center font-medium text-slate-400">
+        <span class="text-sm">Featured Brand</span>
+        <span class="text-[10px] text-slate-400 mt-1">Add when purchased</span>
+    </div>
+
+    <!-- Sub-Brand Expansion Slot 4 -->
+    <div class="bg-slate-50/50 p-6 rounded-xl border border-dashed border-slate-200 flex flex-col items-center justify-center text-center font-medium text-slate-400">
+        <span class="text-sm">Featured Brand</span>
+        <span class="text-[10px] text-slate-400 mt-1">Add when purchased</span>
+    </div>
+</div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER / CONTACT SECTION -->
+    <footer id="contact" class="bg-slate-900 text-white py-10 px-6 mt-12">
+        <div class="max-w-4xl mx-auto text-center space-y-4">
+            <h2 class="text-2xl font-bold">Connect with Amber</h2>
+            <p class="text-slate-400 text-sm">Open for modeling bookings, brand collaborations, and consulting inquiries.</p>
+            
+            <div class="flex justify-center space-x-6 text-xl pt-2">
+                <a href="#" class="text-slate-400 hover:text-pink-400 transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-slate-400 hover:text-pink-400 transition" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:amber@example.com" class="text-slate-400 hover:text-pink-400 transition" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+
+            <p class="text-slate-500 text-xs pt-6">&copy; 2026 Amber Moon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>
